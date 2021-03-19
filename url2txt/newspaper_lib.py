@@ -12,8 +12,9 @@ article.parse()
 #print('Publishing Date: ', article.publish_date)
 #print(article.text)
 
-with open('urltxt.txt', 'w') as f:
+with open('output/urltxt.txt', 'w') as f:
     f.write(article.text)
+    f.write('\n')
 
 #article.nlp()
 #print('Summary: ', article.summary)
