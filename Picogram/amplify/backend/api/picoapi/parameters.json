@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "picoapi",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcognitobb8dde74",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
