@@ -1,0 +1,26 @@
+# this is an auto generated file. This will be overwritten
+query GetPico($id: ID!) {
+  getPico(id: $id) {
+    id
+    userName
+    imageName
+    createdAt
+    updatedAt
+  }
+}
+query ListPicos(
+  $filter: ModelPicoFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPicos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userName
+      imageName
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
