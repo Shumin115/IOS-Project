@@ -1,5 +1,0 @@
-type Pico @model {
-  id: ID!
-  userName: String!
-  imageName: String!
-}
